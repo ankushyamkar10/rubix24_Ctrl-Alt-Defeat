@@ -19,32 +19,78 @@ const Navbar = () => {
           <nav id="navbar" class="navbar">
             <ul>
               <li>
-                <Link onClick={scrollTo} class="active " to="/">
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  class="active "
+                  to="/"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link onClick={scrollTo} to="/resources_requests">
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  to="/resources_requests"
+                >
                   Network
                 </Link>
               </li>
 
               {/* <li>
-              <Link onClick={scrollTo} to="/team">Team</Link>
+              <Link onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }} to="/team">Team</Link>
             </li> */}
               <li>
-                <Link onClick={scrollTo} to="/social_media">
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  to="/social_media"
+                >
                   Threats
                 </Link>
               </li>
               <li>
-                <Link onClick={scrollTo} to="/safety-tips">
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  to="/safety-tips"
+                >
                   Safety Tips
                 </Link>
               </li>
 
               <li>
-                <Link onClick={scrollTo} to="/plan">
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  to="/plan"
+                >
                   <button className="p-2 bg-white text-[#0d2735] hover:border-white">
                     #GetReady
                   </button>

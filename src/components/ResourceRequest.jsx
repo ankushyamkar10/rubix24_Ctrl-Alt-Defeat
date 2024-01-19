@@ -294,7 +294,7 @@ const DisasterResourceApp = () => {
   };
 
   return (
-    <div className="p-5 mx-auto w-[75vw] bg-white border border-gray-300 px-4 py-8 mt-32 rounded-lg drop-shadow-xl">
+    <div className="p-5 mx-auto w-[75vw] bg-white border border-gray-300 px-4 py-8 mt-32 mb-12 rounded-lg drop-shadow-xl">
       <div className="mb-2 text-4xl font-bold">Resources Requests</div>
       <div className="mb-8 text-lg font-semibold">
         AI model to update equipment needs

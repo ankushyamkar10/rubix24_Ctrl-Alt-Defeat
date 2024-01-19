@@ -24,7 +24,17 @@ const Services = () => {
                 <GrResources size={30} className="mx-auto my-[0.3rem]" />
               </div>
               <h4 class="title">
-                <Link href="/resources_requests">Resources Request</Link>
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  href="/resources_requests"
+                >
+                  Resources Request
+                </Link>
               </h4>
               <p class="description">
                 Enables users to request and allocate necessary resources before
@@ -50,7 +60,17 @@ const Services = () => {
                 />
               </div>
               <h4 class="title">
-                <Link href="/predict">Disaster Classification</Link>
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  href="/predict"
+                >
+                  Disaster Classification
+                </Link>
               </h4>
               <p class="description">
                 Utilizes image analysis to classify disasters based on visual
@@ -73,7 +93,17 @@ const Services = () => {
                 <GiFallingRocks size={30} className="mx-auto my-[0.3rem]" />
               </div>
               <h4 class="title">
-                <Link href="/disaster">Disasters</Link>
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  href="/disaster"
+                >
+                  Disasters
+                </Link>
               </h4>
               <p class="description">
                 Stores historical data related to disasters, providing a
@@ -97,7 +127,17 @@ const Services = () => {
                 <FaLink size={30} className="mx-auto my-[0.3rem]" />
               </div>
               <h4 class="title">
-                <Link href="/social_media">Social Media</Link>
+                <Link
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                  href="/social_media"
+                >
+                  Social Media
+                </Link>
               </h4>
               <p class="description">
                 Predicts disasters by analyzing social media for patterns and

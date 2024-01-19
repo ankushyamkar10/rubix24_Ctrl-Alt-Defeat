@@ -37,63 +37,86 @@ const Footer = () => {
               <h4>Our services</h4>
               <ul>
                 <li>
-                  <Link onClick={scrollTo} class="active " to="/">
+                  <Link
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    class="active "
+                    to="/"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={scrollTo} to="/resources_requests">
+                  <Link
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    to="/resources_requests"
+                  >
                     Network
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={scrollTo} to="/predict">
+                  <Link
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    to="/predict"
+                  >
                     Predict
                   </Link>
                 </li>{" "}
                 <li>
-                  <Link onClick={scrollTo} to="/social_media">
+                  <Link
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    to="/social_media"
+                  >
                     Threats
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={scrollTo} to="/disaster">
+                  <Link
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    to="/disaster"
+                  >
                     Disaster
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={scrollTo} to="/plan">
+                  <Link
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                    to="/plan"
+                  >
                     #GetReady
                   </Link>
                 </li>
               </ul>
             </div>
-
-            {/* <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i>{" "}
-                  <Link href="#">Web Design</Link>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <Link href="#">Web Development</Link>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <Link href="#">Product Management</Link>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>{" "}
-                  <Link href="#">Marketing</Link>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <Link href="#">Graphic Design</Link>
-                </li>
-              </ul>
-            </div> */}
 
             <div class="col-lg-3 col-md-6 footer-contact">
               <h4>Contact Us</h4>
@@ -118,20 +141,6 @@ const Footer = () => {
                 platform designed to enhance preparedness and
                 response to emergencies.
               </p>
-              {/* <div class="social-links mt-3">
-                <Link href="#" class="twitter">
-                  <i class="bx bxl-twitter"></i>
-                </Link>
-                <Link href="#" class="facebook">
-                  <i class="bx bxl-facebook"></i>
-                </Link>
-                <Link href="#" class="instagram">
-                  <i class="bx bxl-instagram"></i>
-                </Link>
-                <Link href="#" class="linkedin">
-                  <i class="bx bxl-linkedin"></i>
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>
