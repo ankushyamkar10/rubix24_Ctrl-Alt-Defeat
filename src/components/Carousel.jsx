@@ -44,11 +44,13 @@ const Carousel = () => {
             alt={`Slide ${index + 1}`}
             className="carousal-img"
           />
-          <div className="grey-box">
-            <h2>{slide.title}</h2>
+          <div className="grey-box rounded-2xl shadow-2xl">
+            <h2 className="tracking-wider font-bold text-2xl border-b border-white w-fit mb-2 pr-1">
+              {slide.title}
+            </h2>
             <p>{slide.subtitle}</p>
             <button
-              className="mt-4 button-c "
+              className="mt-4 text-[rgb(30,67,86)] hover:bg-[rgb(30,67,86)] hover:border hover:border-gray-200 hover:text-white hover:shadow-lg focus:outline-none focus:ring"
               onClick={() => navigate("/plan")}
             >
               Make Plan

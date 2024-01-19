@@ -14,9 +14,8 @@
   position: absolute;
   bottom: 70px;
   right: 125px;
-  background-color: rgba(30, 67, 86, 1);
+  background-color: rgba(30, 67, 86, 0.8);
   padding: 40px;
-  border-radius: 8px;
   color: white;
 }
 

@@ -1,40 +1,36 @@
 import React from "react";
 import { FaRegFileAlt } from "react-icons/fa";
 
-const FloodsReady = () => {
+const DroughtReady = () => {
   return (
     <div className="app-container mt-32 mx-12 flex flex-col gap-8">
-      <h1 className="font-bold text-4xl text-center mb-16">
-        Flood Response Plan
-      </h1>
+      <>
+        <h1 className="font-bold text-4xl text-center mb-16">
+          Drought Response Plan
+        </h1>
+      </>
       <div className="flex flex-wrap gap-4">
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Immediate Safety Assessment :
+            Assessment of Water Resources:
           </h2>
           <ul>
-            <li className="">
-              Prioritize safety by checking for injuries and providing first
-              aid.
-            </li>
-            <li>Evacuate to higher ground if floodwaters are still rising.</li>
+            <li>Evaluate the current state of water sources and reservoirs.</li>
+            <li>Determine the impact of the drought on groundwater levels.</li>
           </ul>
         </section>
 
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Communication and Coordination:
+            Water Conservation Measures:
           </h2>
           <ul>
+            <li>Implement water conservation programs and campaigns.</li>
             <li>
-              Establish communication with emergency services, neighbors, and
-              community members.
-            </li>
-            <li>
-              Share information about the extent of flooding and immediate
-              needs.
+              Encourage efficient water use in homes, agriculture, and
+              industries.
             </li>
           </ul>
         </section>
@@ -42,42 +38,29 @@ const FloodsReady = () => {
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Structural Assessment:
+            Crop Diversification and Rotation:
           </h2>
           <ul>
             <li>
-              Inspect buildings for flood damage, focusing on structural
-              integrity.
+              Promote crop diversification and rotation to reduce water demand.
             </li>
-            <li>Label buildings as safe, unsafe, or potentially unsafe.</li>
+            <li>Support the cultivation of drought-resistant crops.</li>
           </ul>
         </section>
 
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Utilities Check:
+            Drought-Resistant Farming Techniques:
           </h2>
           <ul>
             <li>
-              Shut off gas and electricity in flooded areas to prevent hazards.
+              Educate farmers on sustainable and water-efficient farming
+              practices.
             </li>
             <li>
-              Inspect water supply for contamination and electrical systems for
-              damage.
-            </li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Temporary Shelter:
-          </h2>
-          <ul>
-            <li>Set up temporary shelters for those displaced by the flood.</li>
-            <li>
-              Provide basic necessities like clean water, food, and sanitation.
+              Introduce technologies like drip irrigation and rainwater
+              harvesting.
             </li>
           </ul>
         </section>
@@ -85,15 +68,14 @@ const FloodsReady = () => {
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Community Support:
+            Livestock Management:
           </h2>
           <ul>
             <li>
-              Mobilize community resources for collective recovery efforts.
+              Develop strategies for managing livestock during drought periods.
             </li>
             <li>
-              Establish a support system for vulnerable populations affected by
-              the flood.
+              Promote sustainable grazing practices and supplemental feeding.
             </li>
           </ul>
         </section>
@@ -101,72 +83,26 @@ const FloodsReady = () => {
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Floodplain Management:
+            Emergency Food and Water Distribution:
           </h2>
           <ul>
             <li>
-              Implement and enforce effective floodplain management regulations.
+              Establish emergency food and water distribution centers for
+              affected communities.
             </li>
             <li>
-              Restrict new development in flood-prone areas and encourage
-              sustainable land use.
+              Ensure access to clean drinking water and nutritional support.
             </li>
           </ul>
         </section>
-
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
             Early Warning Systems:
           </h2>
           <ul>
-            <li>Invest in and maintain early warning systems for floods.</li>
-            <li>
-              Educate the public on response actions upon receiving flood
-              warnings.
-            </li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Infrastructure Resilience:
-          </h2>
-          <ul>
-            <li>
-              Upgrade critical infrastructure (roads, bridges, levees) to
-              withstand floods.
-            </li>
-            <li>
-              Implement measures to ensure continuous services during and after
-              floods.
-            </li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Insurance and Financial Preparedness:
-          </h2>
-          <ul>
-            <li>Encourage and educate individuals on flood insurance.</li>
-            <li>Establish financial mechanisms for post-flood recovery.</li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Vegetative and Natural Solutions:
-          </h2>
-          <ul>
-            <li>
-              Promote green infrastructure such as planting trees and creating
-              vegetative buffers.
-            </li>
-            <li>Use natural solutions to absorb and redirect floodwaters.</li>
+            <li>Develop and enhance early warning systems for drought.</li>
+            <li>Provide timely information to communities for preparedness.</li>
           </ul>
         </section>
 
@@ -176,10 +112,36 @@ const FloodsReady = () => {
             Education and Awareness Programs:
           </h2>
           <ul>
-            <li>Conduct community-wide flood preparedness programs.</li>
+            <li>Conduct public awareness campaigns on water conservation.</li>
+            <li>Educate communities on drought-resistant practices.</li>
+          </ul>
+        </section>
+
+        <section className="p-12 w-fit border border-gray-200 rounded-lg">
+          <h2 className="text-lg font-bold mb-2 flex  items-center ">
+            <FaRegFileAlt className="mr-3" />
+            Infrastructure for Water Storage:
+          </h2>
+          <ul>
             <li>
-              Educate residents on evacuation routes, emergency shelters, and
-              flood safety.
+              Invest in infrastructure for water storage and rainwater
+              harvesting.
+            </li>
+            <li>Develop or enhance reservoirs and dams for water retention.</li>
+          </ul>
+        </section>
+
+        <section className="p-12 w-fit border border-gray-200 rounded-lg">
+          <h2 className="text-lg font-bold mb-2 flex  items-center ">
+            <FaRegFileAlt className="mr-3" />
+            Reforestation and Erosion Control:
+          </h2>
+          <ul>
+            <li>
+              Undertake reforestation projects to maintain ecosystem balance.
+            </li>
+            <li>
+              Implement erosion control measures to prevent soil degradation.
             </li>
           </ul>
         </section>
@@ -187,14 +149,11 @@ const FloodsReady = () => {
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Regular Drills and Exercises:
+            Government Policies and Regulations:
           </h2>
           <ul>
-            <li>
-              Conduct regular flood drills to reinforce emergency response
-              plans.
-            </li>
-            <li>Evaluate and adjust plans based on drill outcomes.</li>
+            <li>Enforce and strengthen regulations on water usage.</li>
+            <li>Develop policies that promote sustainable water management.</li>
           </ul>
         </section>
 
@@ -205,24 +164,44 @@ const FloodsReady = () => {
           </h2>
           <ul>
             <li>
-              Support research for innovative flood control technologies and
-              materials.
+              Support research on drought-resistant crops and technologies.
             </li>
-            <li>Foster innovation in urban planning for flood-prone areas.</li>
+            <li>
+              Invest in innovative solutions for water conservation and
+              management.
+            </li>
           </ul>
         </section>
 
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            International Collaboration:
+            Community Resilience Building:
           </h2>
           <ul>
             <li>
-              Collaborate with neighboring regions and countries on flood risk
-              reduction.
+              Train communities in water-efficient practices and drought
+              preparedness.
             </li>
-            <li>Share best practices and lessons learned from flood events.</li>
+            <li>
+              Foster a sense of community responsibility for water conservation.
+            </li>
+          </ul>
+        </section>
+
+        <section className="p-12 w-fit border border-gray-200 rounded-lg">
+          <h2 className="text-lg font-bold mb-2 flex  items-center ">
+            <FaRegFileAlt className="mr-3" />
+            Emergency Response Planning:
+          </h2>
+          <ul>
+            <li>
+              Develop and update emergency response plans for drought
+              situations.
+            </li>
+            <li>
+              Coordinate with relevant agencies for effective response efforts.
+            </li>
           </ul>
         </section>
       </div>
@@ -230,4 +209,4 @@ const FloodsReady = () => {
   );
 };
 
-export default FloodsReady;
+export default DroughtReady;

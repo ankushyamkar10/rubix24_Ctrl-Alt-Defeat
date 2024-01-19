@@ -44,9 +44,9 @@ const Predict = () => {
   };
 
   return (
-    <div>
+    <div className=" pb-16 bg-[url('https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2023/05/01/3797366-1558490244.jpg?itok=naJYtYjF')}">
       <div className="flex gap-8 justify-between">
-        <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md mt-32">
+        <div className="max-w-md mx-auto p-12 border  bg-white rounded-lg shadow-md mt-32">
           <h2 className="text-2xl font-semibold mb-6">
             Disaster Classification
           </h2>
@@ -80,7 +80,7 @@ const Predict = () => {
             </div>
           )}
         </div>
-        <div className=" w-[35rem] mx-auto p-6 bg-white rounded-lg shadow-md mt-32">
+        <div className=" w-[35rem] mx-auto p-6 border bg-white rounded-lg shadow-md mt-32">
           <h2 className="text-2xl font-semibold mb-6">Output</h2>
           {response && (
             <div>

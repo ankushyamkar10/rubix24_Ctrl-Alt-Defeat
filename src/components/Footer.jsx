@@ -8,7 +8,7 @@ const Footer = () => {
       data-aos="fade-up"
       data-aos-easing="ease-in-out"
       data-aos-duration="500"
-      className="mt-16"
+      // className="mt-16"
     >
       <div class="footer-newsletter hidden">
         <div class="container">

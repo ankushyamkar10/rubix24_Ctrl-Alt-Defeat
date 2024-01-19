@@ -1,6 +1,7 @@
 import React from "react";
 import data from "./tweets_12.json";
 import { FiHeart, FiMessageSquare, FiRepeat } from "react-icons/fi";
+import EmailAlert from "./EmailAlert";
 
 const Tweets = () => {
   return (
@@ -96,6 +97,7 @@ const Tweets = () => {
             </div>
           );
         })}
+      <EmailAlert />
     </div>
   );
 };

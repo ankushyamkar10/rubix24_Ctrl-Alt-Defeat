@@ -50,7 +50,7 @@ const Services = () => {
                 />
               </div>
               <h4 class="title">
-                <Link href="/predict">Disaster Classfication</Link>
+                <Link href="/predict">Disaster Classification</Link>
               </h4>
               <p class="description">
                 Utilizes image analysis to classify disasters based on visual

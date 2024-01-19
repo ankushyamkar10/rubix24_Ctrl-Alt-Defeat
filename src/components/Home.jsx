@@ -22,7 +22,7 @@ const Home = () => {
         <Hero />
       </div>
 
-      <div class="flex items-center gap-8 justify-between bg-gray-100 mt-16">
+      <div class="flex items-center gap-8 justify-between bg-gray-100 mt-16 pb-8">
         <div class="w-1/2 ">
           <div class="p-4">
             <div className="relative">

@@ -15,6 +15,9 @@ import Plans from "./components/Plans";
 import DisasterPage from "./components/DisasterPage";
 import Layout from "./components/layout";
 import FloodsReady from "./components/FloodsReady";
+import LandslideReady from "./components/LandSlidesREady";
+import DroughtReady from "./components/DroughReady";
+import NewLayout from "./components/NewLayout";
 
 const App = () => {
   return (
@@ -36,8 +39,10 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/plan" element={<Plans />} />
             <Route path="/predict" element={<Predict />} />
-            <Route path="/safety-tips" element={<Layout />} />
+            <Route path="/safety-tips" element={<NewLayout />} />
             <Route path="/floods-ready" element={<FloodsReady />} />
+            <Route path="/landslides-ready" element={<LandslideReady />} />
+            <Route path="/drought-ready" element={<DroughtReady />} />
           </Routes>
         </div>
         <Footer />

@@ -67,7 +67,7 @@ const PredictCard = ({ title }) => {
   };
   return (
     <div className="flex gap-8 justify-between">
-      <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md mt-32">
+      <div className="max-w-md mx-auto p-12 bg-white rounded-lg shadow-md mt-32 border">
         <h2 className="text-2xl font-semibold mb-6">{title}</h2>
         <form onSubmit={handleSubmit}>
           <label className="block mb-6">
@@ -79,6 +79,12 @@ const PredictCard = ({ title }) => {
               className="mt-2"
             />
           </label>
+          <button
+            type="submit"
+            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          >
+            Submit
+          </button>
         </form>
 
         {image && (
@@ -93,7 +99,7 @@ const PredictCard = ({ title }) => {
           </div>
         )}
       </div>
-      <div className=" w-[35rem] mx-auto p-6 bg-white rounded-lg shadow-md mt-32">
+      <div className=" w-[35rem] mx-auto p-6 border bg-white rounded-lg shadow-md mt-32">
         <h2 className="text-2xl font-semibold mb-6">Output</h2>
         {output}
       </div>

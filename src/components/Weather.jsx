@@ -18,7 +18,7 @@ const Weather = () => {
   const [src, setsrc] = useState();
 
   useEffect(() => {
-    // checkWeather("Satara").then((res) => setRes(res));
+    checkWeather("Satara").then((res) => setRes(res));
   }, []);
 
   async function checkWeather(city) {

@@ -1,24 +1,23 @@
-import React from "react";
 import { FaRegFileAlt } from "react-icons/fa";
 
-const FloodsReady = () => {
+function LandslideReady() {
   return (
     <div className="app-container mt-32 mx-12 flex flex-col gap-8">
       <h1 className="font-bold text-4xl text-center mb-16">
-        Flood Response Plan
+        Landslide Response Plan
       </h1>
       <div className="flex flex-wrap gap-4">
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Immediate Safety Assessment :
+            Immediate Safety Assessment:
           </h2>
           <ul>
-            <li className="">
-              Prioritize safety by checking for injuries and providing first
-              aid.
+            <li>
+              Prioritize safety by assessing the immediate risk of further
+              landslides.
             </li>
-            <li>Evacuate to higher ground if floodwaters are still rising.</li>
+            <li>Evacuate individuals from high-risk areas.</li>
           </ul>
         </section>
 
@@ -33,7 +32,7 @@ const FloodsReady = () => {
               community members.
             </li>
             <li>
-              Share information about the extent of flooding and immediate
+              Share information about the extent of the landslide and immediate
               needs.
             </li>
           </ul>
@@ -42,74 +41,41 @@ const FloodsReady = () => {
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Structural Assessment:
+            Geotechnical Assessment:
           </h2>
           <ul>
             <li>
-              Inspect buildings for flood damage, focusing on structural
-              integrity.
+              Conduct a thorough geotechnical assessment to understand the cause
+              of the landslide.
             </li>
-            <li>Label buildings as safe, unsafe, or potentially unsafe.</li>
+            <li>Identify areas prone to future landslides.</li>
           </ul>
         </section>
 
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Utilities Check:
+            Infrastructure Inspection:
           </h2>
           <ul>
-            <li>
-              Shut off gas and electricity in flooded areas to prevent hazards.
-            </li>
-            <li>
-              Inspect water supply for contamination and electrical systems for
-              damage.
-            </li>
+            <li>Inspect roads, bridges, and buildings for damage.</li>
+            <li>Evaluate the stability of slopes and embankments.</li>
           </ul>
         </section>
 
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Temporary Shelter:
-          </h2>
-          <ul>
-            <li>Set up temporary shelters for those displaced by the flood.</li>
-            <li>
-              Provide basic necessities like clean water, food, and sanitation.
-            </li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Community Support:
+            Vegetation and Soil Management:
           </h2>
           <ul>
             <li>
-              Mobilize community resources for collective recovery efforts.
+              Implement measures to stabilize slopes, such as planting
+              vegetation.
             </li>
             <li>
-              Establish a support system for vulnerable populations affected by
-              the flood.
-            </li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Floodplain Management:
-          </h2>
-          <ul>
-            <li>
-              Implement and enforce effective floodplain management regulations.
-            </li>
-            <li>
-              Restrict new development in flood-prone areas and encourage
-              sustainable land use.
+              Control soil erosion through appropriate land management
+              practices.
             </li>
           </ul>
         </section>
@@ -120,10 +86,50 @@ const FloodsReady = () => {
             Early Warning Systems:
           </h2>
           <ul>
-            <li>Invest in and maintain early warning systems for floods.</li>
+            <li>Establish or enhance early warning systems for landslides.</li>
+            <li>Educate the public on signs and evacuation procedures.</li>
+          </ul>
+        </section>
+
+        <section className="p-12 w-fit border border-gray-200 rounded-lg">
+          <h2 className="text-lg font-bold mb-2 flex  items-center ">
+            <FaRegFileAlt className="mr-3" />
+            Zoning and Land-Use Planning:
+          </h2>
+          <ul>
             <li>
-              Educate the public on response actions upon receiving flood
-              warnings.
+              Implement zoning regulations to restrict development in
+              landslide-prone areas.
+            </li>
+            <li>Develop and enforce strict land-use planning guidelines.</li>
+          </ul>
+        </section>
+
+        <section className="p-12 w-fit border border-gray-200 rounded-lg">
+          <h2 className="text-lg font-bold mb-2 flex  items-center ">
+            <FaRegFileAlt className="mr-3" />
+            Public Awareness and Education:
+          </h2>
+          <ul>
+            <li>Conduct public awareness campaigns on landslide risks.</li>
+            <li>
+              Educate communities on preventive measures and preparedness.
+            </li>
+          </ul>
+        </section>
+
+        <section className="p-12 w-fit border border-gray-200 rounded-lg">
+          <h2 className="text-lg font-bold mb-2 flex  items-center ">
+            <FaRegFileAlt className="mr-3" />
+            Emergency Response Planning:
+          </h2>
+          <ul>
+            <li>
+              Develop and update emergency response plans for landslide events.
+            </li>
+            <li>
+              Train emergency responders and the community on response
+              procedures.
             </li>
           </ul>
         </section>
@@ -135,12 +141,12 @@ const FloodsReady = () => {
           </h2>
           <ul>
             <li>
-              Upgrade critical infrastructure (roads, bridges, levees) to
-              withstand floods.
+              Design and construct infrastructure with consideration for
+              landslide resilience.
             </li>
             <li>
-              Implement measures to ensure continuous services during and after
-              floods.
+              Implement protective structures, such as retaining walls and
+              barriers.
             </li>
           </ul>
         </section>
@@ -148,38 +154,16 @@ const FloodsReady = () => {
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Insurance and Financial Preparedness:
-          </h2>
-          <ul>
-            <li>Encourage and educate individuals on flood insurance.</li>
-            <li>Establish financial mechanisms for post-flood recovery.</li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Vegetative and Natural Solutions:
+            Slope Stabilization Measures:
           </h2>
           <ul>
             <li>
-              Promote green infrastructure such as planting trees and creating
-              vegetative buffers.
+              Implement engineering measures to stabilize slopes, such as rock
+              bolts or soil nailing.
             </li>
-            <li>Use natural solutions to absorb and redirect floodwaters.</li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            Education and Awareness Programs:
-          </h2>
-          <ul>
-            <li>Conduct community-wide flood preparedness programs.</li>
             <li>
-              Educate residents on evacuation routes, emergency shelters, and
-              flood safety.
+              Consider drainage improvements to reduce water-induced
+              instability.
             </li>
           </ul>
         </section>
@@ -187,47 +171,34 @@ const FloodsReady = () => {
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Regular Drills and Exercises:
+            Land Rehabilitation:
           </h2>
           <ul>
             <li>
-              Conduct regular flood drills to reinforce emergency response
-              plans.
+              Undertake rehabilitation projects to restore affected landscapes.
             </li>
-            <li>Evaluate and adjust plans based on drill outcomes.</li>
+            <li>
+              Implement erosion control measures to prevent further
+              destabilization.
+            </li>
           </ul>
         </section>
 
         <section className="p-12 w-fit border border-gray-200 rounded-lg">
           <h2 className="text-lg font-bold mb-2 flex  items-center ">
             <FaRegFileAlt className="mr-3" />
-            Research and Innovation:
+            Government Policies and Regulations:
           </h2>
           <ul>
             <li>
-              Support research for innovative flood control technologies and
-              materials.
+              Enforce and strengthen regulations related to construction and
+              development in landslide-prone areas.
             </li>
-            <li>Foster innovation in urban planning for flood-prone areas.</li>
-          </ul>
-        </section>
-
-        <section className="p-12 w-fit border border-gray-200 rounded-lg">
-          <h2 className="text-lg font-bold mb-2 flex  items-center ">
-            <FaRegFileAlt className="mr-3" />
-            International Collaboration:
-          </h2>
-          <ul>
-            <li>
-              Collaborate with neighboring regions and countries on flood risk
-              reduction.
-            </li>
-            <li>Share best practices and lessons learned from flood events.</li>
           </ul>
         </section>
       </div>
     </div>
   );
-};
+}
 
-export default FloodsReady;
+export default LandslideReady;
