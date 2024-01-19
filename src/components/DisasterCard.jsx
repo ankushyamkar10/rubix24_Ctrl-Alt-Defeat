@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const DisasterCard = ({ image, title, redirect }) => {
   const navigate = useNavigate();
   return (
-    <div className="card cursor-pointer">
+    <div className="card cursor-pointer bg-transparent">
       <img
         src={image}
         alt={title}

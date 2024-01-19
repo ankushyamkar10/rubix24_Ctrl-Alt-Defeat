@@ -53,7 +53,7 @@ const Plans = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="mx-8 text-center bg-white border border-gray-300 px-4 py-8 mt-32 rounded-lg drop-shadow-xl">
+    <div className="mx-8 text-center bg-gray-200 border border-gray-300 px-4 py-8 mt-32 mb-12 rounded-lg drop-shadow-xl">
       <h1 className="mb-6 text-4xl font-bold">Ready to Plan</h1>
       <div className="flex flex-wrap justify-between items-center">
         {disasterData.map((disaster, index) => (

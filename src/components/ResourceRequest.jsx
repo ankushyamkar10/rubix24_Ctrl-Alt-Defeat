@@ -3,6 +3,8 @@ import Select from "react-select";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../resource.css";
+import { Tab } from "@mui/material";
+import TableModal from "./TableModal";
 
 const initialState = {
   state: null,
@@ -248,6 +250,15 @@ const DisasterResourceApp = () => {
   const [formData, setFormData] = useState(initialState);
   const [districtsOptions, setDistrictsOptions] = useState([]);
   const [itemsOptions, setItemsOptions] = useState([]);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   useEffect(() => {
     if (formData.state) {
@@ -352,20 +363,31 @@ const DisasterResourceApp = () => {
         </div>
       </div>
 
-      <div className=" flex gap-4">
-        <button
-          className="send-request-button hover:border-[#1e4356] hover:bg-[rgba(30,67,86,0.9)]"
-          onClick={handleSendRequest}
-        >
-          Send Supply Request
-        </button>
-        <button
-          className="reset-button hover:border-[#ccc]"
-          onClick={handleReset}
-        >
-          Reset
-        </button>
+      <div className=" flex items-center justify-between">
+        <div className="flex gap-4 items-center">
+          <button
+            className="send-request-button hover:border-[#1e4356] hover:bg-[rgba(30,67,86,0.9)]"
+            onClick={handleSendRequest}
+          >
+            Send Supply Request
+          </button>{" "}
+          <button
+            onClick={openModal}
+            className="mr-4 bg-[rgb(30,67,86)] text-white hover:border hover:border-[rgb(30,67,86)] "
+          >
+            Ask Help?
+          </button>
+        </div>
+        <div>
+          <button
+            className="reset-button hover:border-[#ccc]"
+            onClick={handleReset}
+          >
+            Reset
+          </button>
+        </div>
       </div>
+      <TableModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
     </div>
   );
 };

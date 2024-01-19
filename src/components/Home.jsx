@@ -4,6 +4,7 @@ import Weather from "./Weather";
 import Marquee from "react-fast-marquee";
 import Services from "./Services";
 import Layout from "./layout.jsx";
+import NGOList from "./NGOList.jsx";
 
 const Home = () => {
   return (

@@ -44,7 +44,7 @@ const Weather = () => {
   }
   return (
     <div class="relative w-full h-[420px] max-w-[870px] mx-auto bg-gradient-to-br from-[#1e4356] to-[rgba(30,67,86,0.5)] text-white rounded-lg p-10 text-center mt-20">
-      <div className="bg-gray-100 w-full h-[5.2rem] absolute z-10 -top-[5.2rem] flex items-center justify-center text-2xl font-bold text-black">
+      <div className="text-center bg-gray-100 w-full h-[5.2rem] absolute z-10 -top-[5.2rem] flex items-center justify-center text-2xl font-bold text-black">
         Weather Index
       </div>
       <div class=" flex items-center justify-between">
