@@ -18,11 +18,13 @@ import FloodsReady from "./components/FloodsReady";
 import LandslideReady from "./components/LandSlidesREady";
 import DroughtReady from "./components/DroughReady";
 import NewLayout from "./components/NewLayout";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
       <div className="vh-100 vw-100 overflow-auto scrollbar-hide">
+        <ScrollToTop />
         <Navbar />
         <div className="mt-20">
           <Routes>

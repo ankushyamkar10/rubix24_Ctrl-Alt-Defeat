@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PredictCard from "./PredictCard";
 import axios from "axios";
 
@@ -18,6 +18,10 @@ const Predict = () => {
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(null);
   const [response, setResponse] = useState();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleFileChange = async (e) => {
     const file = e.target.files[0];

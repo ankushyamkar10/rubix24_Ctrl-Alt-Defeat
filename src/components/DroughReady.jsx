@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaRegFileAlt } from "react-icons/fa";
 
 const DroughtReady = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="app-container mt-32 mx-12 flex flex-col gap-8">
       <>

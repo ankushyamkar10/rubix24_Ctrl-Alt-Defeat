@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaRegFileAlt } from "react-icons/fa";
 
 const FloodsReady = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="app-container mt-32 mx-12 flex flex-col gap-8">
       <h1 className="font-bold text-4xl text-center mb-16">

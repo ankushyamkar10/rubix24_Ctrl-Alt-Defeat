@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DisasterCard from "./DisasterCard";
 import { redirect, useNavigate } from "react-router-dom";
 
@@ -49,6 +49,10 @@ const Plans = () => {
         "https://th.bing.com/th/id/OIP.dak1BJvvQ7ZHXgWkAU0ssgHaD4?rs=1&pid=ImgDetMain",
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const navigate = useNavigate();
 

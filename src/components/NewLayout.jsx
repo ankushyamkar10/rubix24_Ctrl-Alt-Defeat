@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import YouTube from "react-youtube";
 
 const NewLayout = () => {
+  useEffect(() => window.scrollTo(0, 0), []);
   const handleButtonClick = (imageUrl) => {
     window.open(imageUrl, "_blank");
   };

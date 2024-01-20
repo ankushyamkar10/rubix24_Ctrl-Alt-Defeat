@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "./Hero";
 import Weather from "./Weather";
 import Marquee from "react-fast-marquee";
@@ -7,6 +7,32 @@ import Layout from "./layout.jsx";
 import NGOList from "./NGOList.jsx";
 
 const Home = () => {
+  const [coordinates, setCoordinates] = useState({
+    latitude: null,
+    longitude: null,
+  });
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+
+  useEffect(() => {
+    const getLocation = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            console.log(latitude, longitude);
+            setCoordinates({ latitude, longitude });
+          },
+          (error) => {
+            console.error("Error getting location:", error.message);
+          }
+        );
+      } else {
+        console.error("Geolocation is not supported by your browser.");
+      }
+    };
+
+    getLocation();
+  }, []);
   return (
     <div className="overflow-hidden">
       <div>

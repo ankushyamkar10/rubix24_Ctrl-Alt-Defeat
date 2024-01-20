@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import EarthQuake from "../assets/EarthQuake.png";
 import Floods from "../assets/Floods.png";
 import Drought from "../assets/drought.png";
@@ -116,6 +116,9 @@ const data = [
 ];
 
 const DisasterPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="mx-8  px-4 py-8 mt-32 ">
       <h1 className="mb-6 text-4xl font-bold">

@@ -11,6 +11,9 @@ import Chart from "chart.js/auto";
 import RegionCard from "./RegionCard";
 
 const Service = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const data = {
     labels: ["Fire", "Tsunami", "EOC", "Water Logging", "Airport Emergency"],
     datasets: [

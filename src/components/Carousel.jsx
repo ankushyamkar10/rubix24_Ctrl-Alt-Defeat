@@ -21,14 +21,14 @@ const Carousel = () => {
   const slides = [
     {
       imgSrc:
-        "https://assets.telegraphindia.com/telegraph/2023/Apr/1681962670_heatwave.jpg",
+        "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202212/ezgif-sixteen_nine_74.jpg?size=948:533",
       title: "#HeatwaveReady",
       subtitle:
         "Being #Heatwave Ready means understanding HeatWave risk and taking steps now to prepare.",
     },
     {
       imgSrc:
-        "https://assets.telegraphindia.com/telegraph/376e2768-95d8-4b32-94b3-a3a1208d21c0.jpg",
+        "https://www.kalpataruindia.in/blog/wp-content/uploads/2020/04/numaish.jpg",
       title: "#FireProof",
       subtitle:
         "Being #FireProof means understanding Safety Tips and taking steps now to prevent fire",
